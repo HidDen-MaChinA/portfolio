@@ -4,13 +4,14 @@ import { ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes, HtmlHTMLAttrib
 export default function HeroSection(){
     return (
         <div className="w-full flex relative justify-center items-center h-[550px] bg-gray-500">
-            <div className="absolute flex overflow-hidden justify-center bg-blue-200 w-full h-full z-10">
+            <div style={{
+                backgroundImage: "url(/images/hero-illustration.jpg)",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+                backgroundSize: "cover"
+            }} className="absolute flex overflow-hidden justify-center bg-blue-200 w-full h-full z-10">
                 <div className="absolute z-20 w-full h-full bg-[#00000090]"></div>
-                <Image alt="hero" className="z-10" style={{
-                    transform: "scale(4,3)",
-                    width: 350,
-                    height: 600
-                }} width={900} height={1200} src={"/images/hero-illustration.jpg"} />
             </div>
             <div className="w-full z-20">
                 <h2 className="text-xl w-full text-white text-center">Bonjour, Hello, Manaona, je suis Niaina Franco</h2>
