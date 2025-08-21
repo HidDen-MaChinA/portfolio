@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes, HtmlHTMLAttrib
 
 export default function HeroSection(){
     return (
-        <div className="w-full flex relative justify-center items-center h-[600px] bg-gray-500">
+        <div className="w-full flex relative justify-center items-center h-[550px] bg-gray-500">
             <div className="absolute flex overflow-hidden justify-center bg-blue-200 w-full h-full z-10">
                 <div className="absolute z-20 w-full h-full bg-[#00000090]"></div>
                 <Image alt="hero" className="z-10" style={{
@@ -24,14 +24,14 @@ export default function HeroSection(){
     )
 }
 
-function CTA1(props: DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>){
+export function CTA1(props: DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>){
     return(
-        <button {...props} className="bg-white py-2 px-3 rounded-full" />
+        <button {...props} className="bg-white py-2 px-7 rounded-full" />
     )
 }
 
-function CTA2(props: DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>){
+export function CTA2(props: DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>){
     return(
-        <button {...props} className="bg-black text-white py-2 px-3 rounded-full" />
+        <button {...props} className="bg-black text-white py-2 px-7 rounded-full" />
     )
 }
