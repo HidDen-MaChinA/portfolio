@@ -1,44 +1,43 @@
 import Image from "next/image";
 import { CTA2 } from "./HeroSection";
+import { SectionTitle } from "./SkillsSection/SkillsSection";
 
 export default function AboutMeSection(){
     return (
       <div className="w-full">
-        <div className="p-7">
-          <h2 className="pb-5 px-2 w-full text-2xl">About Me</h2>
-          <div className="flex gap-4 w-full">
-            <div className="overflow-hidden shadow-lg w-[200] rounded-2xl h-[200]">
-              <Image
-                alt="hero"
-                className=" rounded-2xl z-10"
-                style={{
-                  transform: "matrix(2.5,0,0,1.7,1,-120)",
-                  width: 300,
-                  height: 400,
-                }}
-                width={500}
-                height={600}
-                src={"/images/hero-illustration.jpg"}
-              />
+        <div className="px-[100]">
+          <SectionTitle className="text-jade-standard">About Me !</SectionTitle>
+          <div className="flex gap-4 justify-center w-full">
+            <div className="p-[60] bg-jade-standard rounded-xl">
+              <div className="overflow-hidden shadow-lg w-[250] rounded-2xl h-[250]">
+                <Image
+                  alt="hero"
+                  className=" rounded-2xl z-10"
+                  style={{
+                    transform: "matrix(2,0,0,1.9,2,-40)",
+                    width: 250,
+                    height: 350,
+                  }}
+                  width={500}
+                  height={600}
+                  src={"/images/hero-illustration.jpg"}
+                />
+              </div>
             </div>
-            <div className="flex-1 flex flex-col justify-between">
+            <div className="max-w-[600px] flex flex-col">
               <div className="w-full">
-                  <div className="text-xl">
-                    I'm a sotware developper located at{" "}
-                    <span className="text-blue-400">Madagascar, Antananarivo</span>{" "}
+                  <h3 className="text-xl font-bold text-jade-standard mb-3">I am...</h3>
+                  <div className="text-xl text-justify">
+                    A sotware developper located at{" "}
+                    <span className="text-jade-light">Madagascar, Antananarivo</span>{" "}
                     and i'm working mostly with{" "}
-                    <span className="text-blue-500">Javascript</span> for any type of
+                    <span className="text-jade-light">Javascript</span> for any type of
                     applications that you would need to achieve your goals.
                   </div>
                   <div className="text-xl pt-4">
-                    I'm open to any <span className="text-blue-600">freelance, bug fix, and feature addon</span>{" "}
+                    I'm open to any <span className="text-jade-light">freelance, bug fix, and feature addon</span>{" "}
                     jobs of your needs and all that from remote.
                   </div>
-              </div>
-              <div className="w-full flex">
-                <div className="mb-2">
-                    <CTA2>Contacts</CTA2>
-                </div>
               </div>
             </div>
           </div>
