@@ -13,19 +13,22 @@ export type MainSkillsLanguge = {
 export function MainSkills(props: MainSkillsPropsType){
     const {languages} = props;
     return(
-        <div className="flex flex-wrap justify-center gap-8 bg-jade-light py-8 rounded-3xl">
-            {
-                languages.map((language, index)=>{
-                    return (
-                      <MainSkillsItem
-                        key={"slide-show-item-" + index + "-" + language.name}
-                        level={language.level}
-                        language={language.language}
-                        name={language.name}
-                      />
-                    );
-                })
-            }
+        <div className="rounded-3xl relative rounded-3xl">
+          <div className="w-full absolute rounded-xl h-full bg-jade-light"></div>
+          <div className="flex flex-wrap justify-center gap-8 py-8 rounded-3xl">
+              {
+                  languages.map((language, index)=>{
+                      return (
+                        <MainSkillsItem
+                          key={"slide-show-item-" + index + "-" + language.name}
+                          level={language.level}
+                          language={language.language}
+                          name={language.name}
+                        />
+                      );
+                  })
+              }
+          </div>
         </div>
     )
 }
@@ -53,11 +56,11 @@ export function MainSkillsItem(props: MainSkillsLanguge){
 }
 
 
-function LevelMeter(props: {meter?: number} = {meter: 0}){
+function LevelMeter(props: {meter: number} = {meter: 0}){
     const {meter} = props;
     return (
-    <div className="rounded-full flex bg-gray-300 flex-row w-full items-center relative">
-        <div className="h-[23px] rounded-full bg-gold" style={{ width: meter + "%" }}></div>
+    <div className="rounded-full flex bg-gray-300 flex-row overflow-hidden w-full items-center relative">
+        <div className="h-[23px] bg-jade-light" style={{ width: meter + "%" }}></div>
         <div className="absolute right-2 text-sm rounded-xl bg-[#00000080] px-1">{meter} %</div>
       </div>
     );

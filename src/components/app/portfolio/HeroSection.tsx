@@ -1,38 +1,39 @@
 import Image from "next/image"
-import { ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes, HtmlHTMLAttributes } from "react"
+import { AnchorHTMLAttributes, ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes, HtmlHTMLAttributes } from "react"
 
 export default function HeroSection(){
     return (
-        <div id="hero" className="w-full flex relative justify-center items-center h-[550px] bg-gray-500">
+        <div id="hero" className="w-full flex relative justify-center items-center h-[600px] bg-gray-500">
             <div style={{
-                backgroundImage: "url(/images/hero-illustration.jpg)",
+                backgroundImage: "url(/images/about-me-backdrop.png)",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "fixed",
-                backgroundSize: "cover"
+                backgroundPositionX: "center",
+                backgroundSize: "1900px 1100px"
             }} className="absolute flex overflow-hidden justify-center bg-blue-200 w-full h-full z-10">
-                <div className="absolute z-20 w-full h-full bg-[#00000090]"></div>
+                <div style={{backdropFilter: "blur(7px)"}} className="absolute z-20 w-full h-full bg-[#203b37b0]"></div>
             </div>
             <div className="w-full z-20">
-                <h2 className="text-xl w-full text-white text-center">Bonjour, Hello, Manaona, je suis Niaina Franco</h2>
-                <h1 className="text-3xl w-full text-white text-center">Developeur</h1>
-                <div className="w-full mt-3 gap-3 flex justify-center">
-                    <CTA1>Click Me</CTA1>
-                    <CTA2>Click Me</CTA2>
+                <h1 className="text-3xl w-full text-white text-center">Bonjour, Hello, Manaona, je suis Niaina Franco</h1>
+                <h2 className="text-3xl w-full font-bold text-gold text-center">Software Developeur</h2>
+                <div className="w-full mt-6 gap-3 flex justify-center">
+                    <CTA2 href="#projects">Projects</CTA2>
+                    <CTA1 href="#contacts">Contact</CTA1>
                 </div>
             </div>
         </div>
     )
 }
 
-export function CTA1(props: DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>){
+export function CTA1(props: DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>){
     return(
-        <button {...props} className="bg-white py-2 px-7 rounded-full" />
+        <a {...props} className="block bg-gold text-jade-black py-2 px-7 shadow-lg rounded-full" />
     )
 }
 
-export function CTA2(props: DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>){
+export function CTA2(props: DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>){
     return(
-        <button {...props} className="bg-black text-white py-2 px-7 rounded-full" />
+        <a {...props} className="block bg-jade-standard text-white shadow-lg py-2 px-7 rounded-full" />
     )
 }

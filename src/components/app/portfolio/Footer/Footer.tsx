@@ -65,7 +65,7 @@ function ContactText(props: {label?: string, children?: ReactNode}) {
             <h2 className="text-lg">{label} :</h2>
         </div>
         <div>
-            <p className="text-lg text-gold">{children}</p>
+            <p className="text-lg text-gray-300">{children}</p>
         </div>
       </div>
     );

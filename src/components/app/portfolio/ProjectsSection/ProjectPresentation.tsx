@@ -7,7 +7,7 @@ export type ProjectPresentationPropsType = {
     sub?: string
     description?: string
     technos: string[]
-
+    url?: string
 }
 
 export function ProjectPresentation(props: ProjectPresentationPropsType){
@@ -16,9 +16,9 @@ export function ProjectPresentation(props: ProjectPresentationPropsType){
     return (
       <div className="w-[450px] flex flex-col gap-6 pt-8 p-4 bg-jade-standard rounded-2xl text-white">
         <div>
-          <h1 className="text-2xl">{name}</h1>
-          <h2 className="text-lg text-gray-300">{sub}</h2>
-          <p className="pt-2 indent-[30px] text-justify">{description}</p>
+          <h1 className="text-2xl font-bold text-gold">{name}</h1>
+          <h2 className="text-lg text-gray-200">{sub}</h2>
+          <p className="pt-2 text-md text-gray-200 text-justify">{description}</p>
         </div>
         <div className="p-3 bg-jade-light rounded-3xl">
             <div className="w-full overflow-hidden rounded-xl shadow-lg flex justify-center h-[200px]">
@@ -39,7 +39,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType){
               </div>
               <div className="flex-1 text-black flex">
                 <div className="w-full flex justify-center items-center">
-                    <CTA1>View</CTA1>
+                    <a className="rounded-xl py-2 px-4 text-jade-standard shadow-lg shadow-[#5a8f7640] bg-gold" href="https:github.com/hidden-machina">Repository</a>
                 </div>
               </div>
         </div>

@@ -52,6 +52,6 @@ export default function SkillsSection(){
 
 export function SectionTitle(props: {children?: ReactNode, className?: string}){
     return(
-          <h2 className={`text-center py-[50] px-2 w-full text-3xl ${props.className}`}>{props.children}</h2>
+          <h2 className={`text-jade-standard text-center py-[50] px-2 w-full text-3xl ${props.className}`}>{props.children}</h2>
     )
 }

@@ -44,8 +44,8 @@ export type AchievementLinePropsType = {
 export function AchievementLine(props: AchievementLinePropsType){
     const {name, sub, date, overcolor} = props
     return (
-        <div className="w-full bg-gray-100 py-3 px-5 rounded-xl" style={{backgroundColor: overcolor ? "white" : "var(--background)"}}>
-            <h1 className="text-3xl text-gold">{name}</h1>
+        <div className="w-full py-3 px-5 rounded-xl" style={{backgroundColor: overcolor ? "#00000010" : "var(--background)"}}>
+            <h1 className="text-3xl text-jade-standard">{name}</h1>
             <h2 className="text-xl">{date}</h2>
             <p className="pt-2">{sub}</p>
         </div>
