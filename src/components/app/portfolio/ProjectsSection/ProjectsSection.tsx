@@ -3,7 +3,7 @@ import { ProjectPresentation } from "./ProjectPresentation";
 
 export default function ProjectsSection(){
     return (
-      <div className="w-full flex flex-col items-center">
+      <div id="projects" className="w-full flex flex-col items-center">
         <SectionTitle>My latest works</SectionTitle>
         <div className="max-w-[1100px]">
           <div className="w-full flex flex-wrap gap-[40]">

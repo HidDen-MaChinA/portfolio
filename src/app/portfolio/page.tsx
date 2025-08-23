@@ -2,6 +2,7 @@ import AboutMeSection from "@/components/app/portfolio/AboutMeSection";
 import AchievementsSection from "@/components/app/portfolio/AchievementsSection/AchievementsSection";
 import Footer from "@/components/app/portfolio/Footer/Footer";
 import HeroSection from "@/components/app/portfolio/HeroSection";
+import TopBar from "@/components/app/portfolio/Navigation/TopBar";
 import ProjectsSection from "@/components/app/portfolio/ProjectsSection/ProjectsSection";
 import SkillsSection from "@/components/app/portfolio/SkillsSection/SkillsSection";
 import Image from "next/image";
@@ -9,6 +10,7 @@ import Image from "next/image";
 export default function Portfolio(){
     return (
         <div>
+            <TopBar />
             <HeroSection />
             <div className="flex flex-col gap-[90px]">
                 <AboutMeSection />

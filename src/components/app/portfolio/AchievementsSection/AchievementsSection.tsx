@@ -14,7 +14,7 @@ export default function AchievementsSection(){
       },
     ];
     return (
-      <div className="w-full">
+      <div id="achievements" className="w-full">
         <SectionTitle>Achievements</SectionTitle>
         <div className="w-full flex justify-center">
             <div className="max-w-[1100px] w-[800px] flex flex-col gap-2">

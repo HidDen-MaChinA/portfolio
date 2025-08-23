@@ -4,7 +4,7 @@ import { SectionTitle } from "./SkillsSection/SkillsSection";
 
 export default function AboutMeSection(){
     return (
-      <div className="w-full">
+      <div id="about-me" className="w-full">
         <div className="px-[100]">
           <SectionTitle className="text-jade-standard">About Me !</SectionTitle>
           <div className="flex gap-4 justify-center w-full">

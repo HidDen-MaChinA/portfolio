@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes, HtmlHTMLAttrib
 
 export default function HeroSection(){
     return (
-        <div className="w-full flex relative justify-center items-center h-[550px] bg-gray-500">
+        <div id="hero" className="w-full flex relative justify-center items-center h-[550px] bg-gray-500">
             <div style={{
                 backgroundImage: "url(/images/hero-illustration.jpg)",
                 backgroundPosition: "center",

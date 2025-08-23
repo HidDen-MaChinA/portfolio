@@ -3,7 +3,7 @@ import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react"
 
 export default function Footer(){
   return (
-    <footer className="bg-jade-standard">
+    <footer id="footer" className="bg-jade-standard">
       <div className="mt-[80px] flex justify-between flex-wrap text-white">
         <div className="pl-[70] py-8">
           <h1 className="text-3xl">Contacts</h1>
