@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react"
+import { ReactNode } from "react";
 
-export default function Footer(){
+export default function Footer() {
   return (
     <footer id="footer" className="bg-jade-standard">
       <div className="mt-[80px] flex justify-between flex-wrap text-white">
@@ -51,22 +51,23 @@ export default function Footer(){
         </div>
       </div>
       <div className="bg-black text-md px-3 text-white text-right p-1">
-        Made by @hidden-machina (niainafrancoroberto@gmail.com) using Next js, Tailwind Css
+        Made by @hidden-machina (niainafrancoroberto@gmail.com) using Next js,
+        Tailwind Css
       </div>
     </footer>
   );
 }
 
-function ContactText(props: {label?: string, children?: ReactNode}) {
-    const {children, label} = props
-    return (
+function ContactText(props: { label?: string; children?: ReactNode }) {
+  const { children, label } = props;
+  return (
+    <div>
       <div>
-        <div>
-            <h2 className="text-lg">{label} :</h2>
-        </div>
-        <div>
-            <p className="text-lg text-gray-300">{children}</p>
-        </div>
+        <h2 className="text-lg">{label} :</h2>
       </div>
-    );
+      <div>
+        <p className="text-lg text-gray-300">{children}</p>
+      </div>
+    </div>
+  );
 }

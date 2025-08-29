@@ -5,7 +5,6 @@ import HeroSection from "@/components/app/portfolio/HeroSection";
 import TopBar from "@/components/app/portfolio/Navigation/TopBar";
 import ProjectsSection from "@/components/app/portfolio/ProjectsSection/ProjectsSection";
 import SkillsSection from "@/components/app/portfolio/SkillsSection/SkillsSection";
-import Image from "next/image";
 
 export default function Portfolio(){
     return (

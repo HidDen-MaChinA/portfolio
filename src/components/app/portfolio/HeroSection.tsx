@@ -1,5 +1,4 @@
-import Image from "next/image"
-import { AnchorHTMLAttributes, ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes, HtmlHTMLAttributes } from "react"
+import { AnchorHTMLAttributes, DetailedHTMLProps} from "react"
 
 export default function HeroSection(){
     return (

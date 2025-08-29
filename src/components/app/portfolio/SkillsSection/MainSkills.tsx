@@ -1,4 +1,4 @@
-import { ProjectsLinkList } from "./SkillsProjectsLinkList"
+import { ProjectLinkPropsType, ProjectsLinkList, ProjectsLinkListPropsType } from "./SkillsProjectsLinkList"
 
 export type MainSkillsPropsType = {
    languages: MainSkillsLanguge[]
@@ -8,6 +8,7 @@ export type MainSkillsLanguge = {
     language?: string
     name: string,
     level: number
+    projects?: ProjectLinkPropsType[]
 }
 
 export function MainSkills(props: MainSkillsPropsType){
@@ -20,6 +21,7 @@ export function MainSkills(props: MainSkillsPropsType){
                   languages.map((language, index)=>{
                       return (
                         <MainSkillsItem
+                          projects={language.projects}
                           key={"slide-show-item-" + index + "-" + language.name}
                           level={language.level}
                           language={language.language}
@@ -34,7 +36,7 @@ export function MainSkills(props: MainSkillsPropsType){
 }
 
 export function MainSkillsItem(props: MainSkillsLanguge){
-    const { name, level, language } = props
+    const { name, level, language, projects } = props
     return (
       <div
         className="rounded-2xl duration-[500ms] shadow-lg shadow-[#44444460] bg-jade-standard text-[#ededed] relative w-[200]"
@@ -48,7 +50,7 @@ export function MainSkillsItem(props: MainSkillsLanguge){
             </div>
             <div className="mt-2">
                 <h3 className="px-1">Projects</h3>
-                <ProjectsLinkList links={[{name: "mindi's", url: "something"}]} />
+                  <ProjectsLinkList links={projects} />
             </div>
         </div>
       </div>
