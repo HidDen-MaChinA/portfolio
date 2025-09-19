@@ -18,7 +18,7 @@ export default function HeroSection(){
                 <h2 className="text-3xl w-full font-bold text-gold text-center">Software Developeur</h2>
                 <div className="w-full mt-6 gap-3 flex justify-center">
                     <CTA2 href="#projects">Projects</CTA2>
-                    <CTA1 href="#contacts">Contact</CTA1>
+                    <CTA1 href="#footer">Contact</CTA1>
                 </div>
             </div>
         </div>
