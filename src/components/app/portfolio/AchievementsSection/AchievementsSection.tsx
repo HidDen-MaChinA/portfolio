@@ -7,11 +7,6 @@ export default function AchievementsSection(){
         name: "Graduated from HEI",
         sub: "Three years learning CS at HEI Ivandry",
       },
-      {
-        date: "18 juillets 2025",
-        name: "Finished project",
-        sub: "Rhree years learning CS at HEI Ivandry",
-      },
     ];
     return (
       <div id="achievements" className="w-full">
