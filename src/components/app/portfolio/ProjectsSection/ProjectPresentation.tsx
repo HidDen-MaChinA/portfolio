@@ -9,13 +9,14 @@ export type ProjectPresentationPropsType = {
   description?: string;
   technos: string[];
   url?: string;
+  image?: string
 };
 
 export function ProjectPresentation(props: ProjectPresentationPropsType) {
-  const { name, technos, description, sub } = props;
+  const { name, technos, image, description, sub, url } = props;
 
   return (
-    <div className="w-[450px] flex flex-col gap-6 pt-8 p-4 bg-jade-standard rounded-2xl text-white">
+    <div className="w-[450px] justify-between flex flex-col gap-6 pt-8 p-4 bg-jade-standard rounded-2xl text-white">
       <div>
         <h1 className="text-2xl font-bold text-gold">{name}</h1>
         <h2 className="text-lg text-gray-200">{sub}</h2>
@@ -27,7 +28,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
             style={{
               transform: "matrix(1.2,0,0,1.2,1.2,1)",
             }}
-            src={"/images/mindi-s-project.png"}
+            src={image || "/images/broken-image.png"}
             width={400}
             height={200}
             alt="mindi-s-project"
@@ -36,13 +37,13 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
       </div>
       <div className="flex flex-row">
         <div className="w-[250px] relative">
-          <AutoSlider languages={["Javascript", "Laravel", "Electron js"]} />
+          <AutoSlider languages={technos} />
         </div>
         <div className="flex-1 text-black flex">
           <div className="w-full flex justify-center items-center">
             <a
               className="rounded-xl py-2 px-4 text-jade-standard shadow-lg shadow-[#5a8f7640] bg-gold"
-              href="https:github.com/hidden-machina"
+              href={url}
             >
               Repository
             </a>
@@ -57,7 +58,7 @@ function AutoSlider(props: { languages: string[] }) {
   const { languages } = props;
   return (
     <div className="w-full p-3 overflow-hidden">
-      <ClientSideAutoSlider itemNumber={languages.length}>
+      <ClientSideAutoSlider animationDuration="6s" itemNumber={languages.length}>
         {languages.map((language, index) => (
           <span
             className="min-w-[100px] whitespace-nowrap text-ellipsis overflow-hidden p-2 py-1 border rounded-full text-center"

@@ -9,7 +9,7 @@ export function ProjectsLinkList(props: ProjectsLinkListPropsType) {
   return (
     <div className="w-full gap-1 flex flex-row p-1 overflow-hidden">
       {links ? (
-        <ClientSideAutoSlider itemNumber={links.length}>
+        <ClientSideAutoSlider animationDuration="10s" eachWidth={130} itemNumber={links.length + 1}>
           {links.map((link, index) => {
             return (
               <ProjectLink
@@ -37,7 +37,7 @@ function ProjectLink(props: ProjectLinkPropsType) {
   return (
     <a
       href={url}
-      className="min-w-[100px] bg-jade-standard text-center whitespace-nowrap border text-ellipsis text-white px-2 overflow-hidden rounded-full"
+      className="min-w-[100px] max-w-[150px] bg-jade-standard text-center whitespace-nowrap border text-ellipsis text-white px-2 overflow-hidden rounded-full"
     >
       {name}
     </a>

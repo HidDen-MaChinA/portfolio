@@ -25,27 +25,57 @@ export default function SkillsSection() {
                     language: "JS",
                     level: 90,
                     projects: [{
-                      name: "mindi's",
+                      name: "mindi's UI",
+                      url: ""
+                    }
+                    ,{
+                      name: "Darkthunder UI",
                       url: ""
                     },{
-                      name: "Darkthunder UI",
+                      name: "mindi's dashboard",
+                      url: ""
+                    },{
+                      name: "Instat Data View UI",
                       url: ""
                     }]
                   },
                   {
                     name: "Next js",
                     language: "JS",
-                    level: 75,
+                    level: 85,
+                    projects: [{
+                      name: "portfolio",
+                      url: ""
+                    }
+                    ,{
+                      name: "foodgen",
+                      url: ""
+                    }]
                   },
                   {
                     name: "Laravel",
                     language: "PHP",
-                    level: 90,
+                    level: 80,
+                    projects: [{
+                      name: "mindi's Backend",
+                      url: ""
+                    }
+                    ,{
+                      name: "Darkthunder Backend",
+                      url: ""
+                    },{
+                      name: "Instat Data View Backend",
+                      url: ""
+                    }]
                   },
                   {
                     name: "React Native",
                     language: "JS",
                     level: 90,
+                    projects: [{
+                      name: "mindi's APK",
+                      url: ""
+                    }]
                   },
                 ]}
               />
