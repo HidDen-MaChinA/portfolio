@@ -22,7 +22,7 @@ export function ClientSideAutoSlider(props: {
       animation-play-state: paused;
     };
   `;
-  if (props.itemNumber < 2) {
+  if (props.itemNumber <= 2) {
     return <div className={`flex gap-1 duration-[3s]`}>{props.children}</div>;
   } else {
     return (

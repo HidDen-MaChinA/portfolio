@@ -16,25 +16,27 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
   const { name, technos, image, description, sub, url } = props;
 
   return (
-    <div className="w-[450px] justify-between flex flex-col gap-6 pt-8 p-4 bg-jade-standard rounded-2xl text-white">
+    <div className="w-[450px] justify-between flex flex-col gap-6 pt-8 p-7 bg-jade-standard rounded-3xl text-white">
       <div>
         <h1 className="text-2xl font-bold text-gold">{name}</h1>
-        <h2 className="text-lg text-gray-200">{sub}</h2>
+        <h2 className="text-lg text-gray-400">{sub}</h2>
         <p className="pt-2 text-md text-gray-200 text-justify">{description}</p>
       </div>
-      <div className="p-3 bg-jade-light rounded-3xl">
-        <div className="w-full overflow-hidden rounded-xl shadow-lg flex justify-center h-[200px]">
-          <Image
-            style={{
-              transform: "matrix(1.2,0,0,1.2,1.2,1)",
-            }}
-            src={image || "/images/broken-image.png"}
-            width={400}
-            height={200}
-            alt="mindi-s-project"
-          />
+      {image && (
+        <div className="p-3 bg-jade-light rounded-3xl">
+          <div className="w-full overflow-hidden rounded-xl shadow-lg flex justify-center h-[200px]">
+            <Image
+              style={{
+                transform: "matrix(1.2,0,0,1.2,1.2,1)",
+              }}
+              src={image || "/images/broken-image.png"}
+              width={400}
+              height={200}
+              alt="mindi-s-project"
+            />
+          </div>
         </div>
-      </div>
+      )}
       <div className="flex flex-row">
         <div className="w-[250px] relative">
           <AutoSlider languages={technos} />
