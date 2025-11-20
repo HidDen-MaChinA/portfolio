@@ -22,13 +22,10 @@ export function ClientSideAutoSlider(props: {
       animation-play-state: paused;
     };
   `;
-  if (props.itemNumber <= 2) {
-    return <div className={`flex gap-1 duration-[3s]`}>{props.children}</div>;
-  } else {
+  GoingRightAnimation.componentStyle
     return (
-      <GoingRightAnimation style={{animationPlayState:"running"}} >
+      <GoingRightAnimation style={{animationPlayState: itemNumber < 2 ? "paused" : "running"}} >
         <div className={`flex gap-1 duration-[3s]`}>{children}</div>
       </GoingRightAnimation>
     );
-  }
 }
