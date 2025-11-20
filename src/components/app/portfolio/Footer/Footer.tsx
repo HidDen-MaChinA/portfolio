@@ -17,21 +17,7 @@ export default function Footer() {
             <ContactText label="Freelancer">Niaina Franco</ContactText>
           </div>
         </div>
-        <div className="w-[500px] flex p-7 flex-col items-center">
-          <div className="w-[200px] overflow-hidden h-[200px] rounded-full border border-gold border-2">
-            <Image
-              alt="hero"
-              className=" rounded-2xl z-10"
-              style={{
-                transform: "matrix(1.8,0,0,1.4,2,-70)",
-                width: 250,
-                height: 350,
-              }}
-              width={500}
-              height={600}
-              src={"/images/hero-illustration.jpg"}
-            />
-          </div>
+        <div className="w-[500px] flex justify-center p-7 flex-col items-center">
           <div className="w-full">
             <h1 className="text-2xl text-center">Niaina Franco</h1>
             <h2 className="text-md text-gray-400 text-center">
