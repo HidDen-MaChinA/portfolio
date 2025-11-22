@@ -16,7 +16,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
   const { name, technos, image, description, sub, url } = props;
 
   return (
-    <div className="sm:w-[450px] m-3 shadow-xl justify-between flex flex-col gap-6 pt-8 p-7 bg-jade-standard rounded-3xl text-white">
+    <div className="sm:w-[450px] shadow-xl justify-between flex flex-col gap-6 pt-8 p-7 bg-jade-standard rounded-3xl text-white">
       <div>
         <h1 className="text-2xl font-bold text-gold">{name}</h1>
         <h2 className="text-lg text-gray-400">{sub}</h2>
@@ -24,7 +24,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
       </div>
       {image && (
         <div className="p-3 bg-jade-light rounded-3xl">
-          <div className="w-full overflow-hidden rounded-xl shadow-lg flex justify-center h-[200px]">
+          <div className="w-full overflow-hidden rounded-xl shadow-lg flex justify-center min-h-[130]">
             <Image
               style={{
                 transform: "matrix(1.2,0,0,1.2,1.2,1)",
@@ -38,7 +38,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
         </div>
       )}
       <div className="flex flex-row">
-        <div className="w-[250px] relative">
+        <div className="overflow-hidden w-[200px] mb:w-[250px] relative">
           <AutoSlider languages={technos} />
         </div>
         <div className="flex-1 text-black flex">

@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
           <div className="w-full pt-5">
             <p className="text-xl text-center">
-              N'ayez pas peur de m'envoyer un <span className="text-gold">mail</span> ou un{" "}
+              N'hésitez pas a m'envoyer un <span className="text-gold">mail</span> ou un{" "}
               <span className="text-gold">message</span>.
             </p>
             <p className="text-xl pt-2 text-center">
@@ -36,8 +36,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black text-md px-3 text-white sm:text-right p-1">
-        Made by @hidden-machina (niainafrancoroberto@gmail.com) using Next js,
+      <div className="bg-black text-sm px-3 text-white sm:text-right p-1">
+        Made by niainafrancoroberto@gmail.com using Next js and
         Tailwind Css
       </div>
     </footer>

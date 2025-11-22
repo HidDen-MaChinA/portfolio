@@ -5,7 +5,7 @@ export default function AchievementsSection(){
       {
         date: "13 juillets 2025",
         name: "Diplôme de Licence en Informatique de HEI",
-        sub: "Trois ans d'étude d'informatique à HEI Ivandry ou j'ai appris les bases de la programmation, le système design",
+        sub: "Trois ans d'étude d'informatique à HEI Ivandry où j'ai appris les bases de la programmation, le système design",
       },
     ];
     return (

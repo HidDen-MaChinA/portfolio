@@ -36,7 +36,7 @@ export default function AboutMeSection() {
                 ?
               </h3>
               <div className="text-lg text-justify">
-                Je suis un developper fullstack localiser à{" "}
+                Je suis un developper fullstack localisé à{" "}
                 <span className="text-jade-light">
                   Madagascar, Antananarivo
                 </span>{" "}
@@ -45,7 +45,7 @@ export default function AboutMeSection() {
                 comme language de programmation.
               </div>
               <div className="text-lg pt-4">
-                Je suis ouvert a tout type de travail{" "}
+                Je suis ouvert à tout type de travail{" "}
                 <span className="text-jade-light">
                   freelance (bug fix, ajout de fonctionnaliter)  et contrat a long term.
                 </span>{" "}

@@ -6,12 +6,12 @@ export default function ProjectsSection(){
       <div id="projects" className="w-full flex flex-col items-center">
         <SectionTitle>Mes projets personnels</SectionTitle>
         <div className="max-w-[1100px]">
-          <div className="w-full flex justify-center flex-wrap gap-[40]">
+          <div className="w-full p-3 flex justify-center flex-wrap gap-[40]">
             <ProjectPresentation
               name="Darkthunder UI"
               image="/images/dark-thunder-ui.png"
               technos={["React JS", "Tailwind CSS"]}
-              description="L'interface utilisateur d'une application de chat en temps réel designer pour etre fluide, intuitive et accées pour les développeurs"
+              description="L'interface utilisateur d'une application de chat en temps réel designé pour être fluide, intuitive et axé pour les développeurs"
               sub="Messaging App"
               url="https://github.com/hidden-machina/dark-thunder-ui.git"
             />
@@ -19,7 +19,7 @@ export default function ProjectsSection(){
               name="Darkthunder Realtime"
               image="/images/dark-thunder-ui.png"
               technos={["Node js"]}
-              description="Un service qui permet un transfert d'informations entres les utilisateur en utilisant un websocket pour que ce soit en temps réel."
+              description="Un service qui permet un transfert d'informations entres les utilisateurs en utilisant un websocket pour que ce soit en temps réel."
               sub="Socket server"
               url="https://github.com/hidden-machina/dark-thunder-realtime.git"
             />
@@ -35,7 +35,7 @@ export default function ProjectsSection(){
               name="Mindi's APK"
               image="/images/mindi-s-project.png"
               technos={["Expo CLI", "React Native"]}
-              description="Une application mobile E-commerce pour faciliter la vie aux clients et au vendeur des produits de Mindi's (un business de vente de produit fait en Macramé) en automatisant tout ce qui est commande et publication des produit. La notion de platte de couleur étant importante dans ce business, cela a été mis en valeur dans l'application."
+              description="Une application mobile E-commerce pour faciliter la vie aux clients et aux vendeurs des produits de Mindi's (un business de vente de produit fait en Macramé) en automatisant tout ce qui est commande et publication des produits. La notion de palette de couleur étant importante dans ce business, cela a été mis en valeur dans l'application."
               sub="E-commerce APP"
               url="https://github.com/hidden-machina/mindi-s-apk.git"
             />

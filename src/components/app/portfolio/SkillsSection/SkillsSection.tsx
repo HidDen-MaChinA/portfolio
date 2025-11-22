@@ -11,10 +11,10 @@ export default function SkillsSection() {
               Mes principaux outils
             </h2>
             <p className="text-lg text-justify">
-              Je code pour différentes <span>Platform</span>
-              en utilisant l'ecosystem de developement de{" "}
+              Je code pour différentes <span>Platform</span>{" "}
+              en utilisant l'écosystem de developement de{" "}
               <span className="text-jade-light"> Javascript </span>
-              pour créé "La" solution dont vous avez besoin que ce soit{" "}
+              pour créer "La" solution dont vous avez besoin que ce soit{" "}
               <span className="text-jade-light">
                 une Application Web, une Application Desktop ou bien une
                 Application Mobile
