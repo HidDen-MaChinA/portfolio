@@ -1,9 +1,8 @@
 "use client";
-import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
-import styled, { keyframes, css, Interpolation, ExecutionContext, FastOmit } from "styled-components";
-import ComponentStyle from "styled-components/dist/models/ComponentStyle";
+import { ReactNode } from "react";
+import styled, { keyframes, css } from "styled-components";
 
-const GoingRightAnimation = styled.div`
+const GoingRightAnimation = styled.div<{animation: string, duration?: string}>`
     animation-name: ${(props:any) => (keyframes `${props.animation}`)};
     animation-duration: ${(props:any) => (css`${props.duration}`)};
     animation-iteration-count: infinite;
