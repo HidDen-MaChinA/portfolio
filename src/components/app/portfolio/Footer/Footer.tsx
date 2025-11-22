@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer id="footer" className="bg-jade-standard">
       <div className="mt-[80px] flex justify-between flex-wrap text-white">
-        <div className="pl-[70] py-8">
+        <div className="sm:pl-[70] pl-4 py-8">
           <h1 className="text-3xl">Contacts</h1>
-          <div className="pt-[40] flex flex-col gap-3">
+          <div className="sm:pt-[40] pt-4 flex flex-col gap-3">
             <ContactText label="Gmail">
               niainafrancoroberto@gmail.com
             </ContactText>
@@ -17,7 +17,7 @@ export default function Footer() {
             <ContactText label="Freelancer">Niaina Franco</ContactText>
           </div>
         </div>
-        <div className="w-[500px] flex justify-center p-7 flex-col items-center">
+        <div className="lg:w-[500px] w-full flex justify-center p-7 flex-col items-center">
           <div className="w-full">
             <h1 className="text-2xl text-center">Niaina Franco</h1>
             <h2 className="text-md text-gray-400 text-center">
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black text-md px-3 text-white text-right p-1">
+      <div className="bg-black text-md px-3 text-white sm:text-right p-1">
         Made by @hidden-machina (niainafrancoroberto@gmail.com) using Next js,
         Tailwind Css
       </div>

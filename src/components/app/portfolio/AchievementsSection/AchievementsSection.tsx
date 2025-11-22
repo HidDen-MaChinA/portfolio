@@ -12,7 +12,7 @@ export default function AchievementsSection(){
       <div id="achievements" className="w-full">
         <SectionTitle>Exploits</SectionTitle>
         <div className="w-full flex justify-center">
-            <div className="max-w-[1100px] w-[800px] flex flex-col gap-2">
+            <div className="max-w-[1100px] w-full m-3 sm:w-[800px] flex flex-col gap-2">
               {achievements.map((achievement, index) => (
                 <AchievementLine
                   date={achievement.date}

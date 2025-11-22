@@ -16,7 +16,7 @@ export function ProjectPresentation(props: ProjectPresentationPropsType) {
   const { name, technos, image, description, sub, url } = props;
 
   return (
-    <div className="w-[450px] shadow-xl justify-between flex flex-col gap-6 pt-8 p-7 bg-jade-standard rounded-3xl text-white">
+    <div className="sm:w-[450px] m-3 shadow-xl justify-between flex flex-col gap-6 pt-8 p-7 bg-jade-standard rounded-3xl text-white">
       <div>
         <h1 className="text-2xl font-bold text-gold">{name}</h1>
         <h2 className="text-lg text-gray-400">{sub}</h2>

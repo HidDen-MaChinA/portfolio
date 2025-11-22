@@ -16,7 +16,7 @@ export function MainSkills(props: MainSkillsPropsType){
     return(
         <div className="rounded-3xl relative rounded-3xl">
           <div className="w-full absolute rounded-xl h-full bg-jade-light"></div>
-          <div className="flex flex-wrap justify-center gap-8 py-8 rounded-3xl">
+          <div className="flex flex-wrap justify-center gap-8 py-8 rounded-3xl px-3">
               {
                   languages.map((language, index)=>{
                       return (
@@ -39,7 +39,7 @@ export function MainSkillsItem(props: MainSkillsLanguge){
     const { name, level, language, projects } = props
     return (
       <div
-        className="rounded-2xl duration-[500ms] shadow-lg shadow-[#44444460] bg-jade-standard text-[#ededed] relative w-[200]"
+        className="rounded-2xl duration-[500ms] shadow-lg shadow-[#44444460] bg-jade-standard text-[#ededed] relative sm:w-[200] w-full"
       >
         <div className="absolute top-1 right-2 font-bold">{language}</div>
         <div className="flex-col relative flex w-full h-full pt-4 pb-3 px-3">

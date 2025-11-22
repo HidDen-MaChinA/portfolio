@@ -8,6 +8,7 @@
   --jade-standard: #203b37;
   --jade-light:#5a8f76 ;
   --gold:#e2a258 ;
+  --breakpoint-mb:300px
 }
 
 @theme inline {

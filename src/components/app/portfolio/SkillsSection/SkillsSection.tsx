@@ -3,10 +3,10 @@ import { MainSkills } from "./MainSkills";
 
 export default function SkillsSection() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full lg:flex lg:justify-center sm:justify-center sm:flex">
       <div className="max-w-[1150px]">
-        <div className="py-4 w-full relative sm:flex-col justify-center flex lg:flex-row gap-5 px-[80]">
-          <div className="max-w-[500px] py-8">
+        <div className="py-4 w-full relative flex-col items-center justify-center sm:items-center flex lg:flex-row gap-5 px-4">
+          <div className="max-w-[550px] py-8">
             <h2 className="text-xl mb-3 font-bold text-jade-standard">
               Mes principaux outils
             </h2>
@@ -22,7 +22,7 @@ export default function SkillsSection() {
               .
             </p>
           </div>
-          <div className="w-[550px]">
+          <div className="w-full">
             <div className="pt-5 w-full">
               <MainSkills
                 languages={[
