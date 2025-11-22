@@ -5,7 +5,7 @@ export default function AboutMeSection() {
   return (
     <div id="about-me" className="w-full">
       <div className="px-[100]">
-        <SectionTitle className="text-jade-standard">About Me !</SectionTitle>
+        <SectionTitle className="text-jade-standard">A propos de moi !</SectionTitle>
         <div className="flex gap-9 justify-center w-full">
           <div className="relative rounded-2xl">
             <div className="w-[300] h-[300]">
@@ -29,27 +29,26 @@ export default function AboutMeSection() {
           <div className="max-w-[600px] flex flex-col">
             <div className="w-full">
               <h3 className="text-xl font-bold text-jade-standard mb-3">
-                Who is{" "}
+                Qui est {" "}
                 <span className="italic text-2xl font-normal text-gold">
                   Niaina Franco
                 </span>{" "}
                 ?
               </h3>
               <div className="text-xl text-justify">
-                A sotware developper located at{" "}
+                Je suis un developper fullstack localiser à{" "}
                 <span className="text-jade-light">
                   Madagascar, Antananarivo
                 </span>{" "}
-                and i'm working mostly with{" "}
-                <span className="text-jade-light">Javascript</span> for any type
-                of applications that you would need to achieve your goals.
+                et je travaille surtout avec{" "}
+                <span className="text-jade-light">Javascript</span> 
+                comme language de programmation.
               </div>
               <div className="text-xl pt-4">
-                I'm open to any{" "}
+                Je suis ouvert a tout type de travail{" "}
                 <span className="text-jade-light">
-                  freelance, bug fix, and feature addon
+                  freelance (bug fix, ajout de fonctionnaliter)  et contrat a long term.
                 </span>{" "}
-                jobs of your needs and all that from remote.
               </div>
             </div>
           </div>

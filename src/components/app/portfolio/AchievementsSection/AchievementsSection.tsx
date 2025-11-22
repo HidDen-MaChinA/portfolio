@@ -4,13 +4,13 @@ export default function AchievementsSection(){
     const achievements: AchievementLinePropsType[] = [
       {
         date: "13 juillets 2025",
-        name: "Graduated from HEI",
-        sub: "Three years learning CS at HEI Ivandry",
+        name: "Diplôme de Licence en Informatique de HEI",
+        sub: "Trois ans d'étude d'informatique à HEI Ivandry ou j'ai appris les bases de la programmation, le système design",
       },
     ];
     return (
       <div id="achievements" className="w-full">
-        <SectionTitle>Achievements</SectionTitle>
+        <SectionTitle>Exploits</SectionTitle>
         <div className="w-full flex justify-center">
             <div className="max-w-[1100px] w-[800px] flex flex-col gap-2">
               {achievements.map((achievement, index) => (

@@ -30,16 +30,16 @@ export default function TopBar() {
     >
       <div className="flex flex-row justify-end w-full">
         <a className="p-3 w-[fit-content] relative block" href="#hero">
-          Home
+          Acceuil
         </a>
         <a className="p-3 w-[fit-content] relative block" href="#about-me">
-          About Me
+          A propos
         </a>
         <a className="p-3 w-[fit-content] relative block" href="#projects">
-          Projects
+          Projets
         </a>
         <a className="p-3 w-[fit-content] relative block" href="#achievements">
-          Achievements
+          Exploits
         </a>
         <a
           className="m-1 px-3 rounded-full items-center w-[fit-content] relative bg-gold text-jade-standard flex"

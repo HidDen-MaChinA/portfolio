@@ -25,7 +25,7 @@ export default function HeroSection(){
         </div>
         <div className="w-full z-20">
           <h1 className="text-3xl w-full text-white text-center">
-            <Greeting greetings={["Hello", "Bonjour", "Manaona"]} />
+            <Greeting greetings={["Bonjour", "Hello", "Manaona"]} />
             , je suis Niaina Franco
           </h1>
           <h2 className="text-3xl w-full font-bold text-gold text-center">

@@ -26,12 +26,12 @@ export default function Footer() {
           </div>
           <div className="w-full pt-5">
             <p className="text-xl text-center">
-              Feel free to send a <span className="text-gold">mail</span> or a{" "}
+              N'ayez pas peur de m'envoyer un <span className="text-gold">mail</span> ou un{" "}
               <span className="text-gold">message</span>.
             </p>
             <p className="text-xl pt-2 text-center">
-              Can't wait to{" "}
-              <span className="text-gold text-2xl">work with you</span>.
+              J'ai hâte de {" "}
+              <span className="text-gold text-2xl">travailler avec vous</span>.
             </p>
           </div>
         </div>

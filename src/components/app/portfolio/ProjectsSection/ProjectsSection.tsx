@@ -4,14 +4,14 @@ import { ProjectPresentation } from "./ProjectPresentation";
 export default function ProjectsSection(){
     return (
       <div id="projects" className="w-full flex flex-col items-center">
-        <SectionTitle>My latest works</SectionTitle>
+        <SectionTitle>Mes projets personnels</SectionTitle>
         <div className="max-w-[1100px]">
           <div className="w-full flex justify-center flex-wrap gap-[40]">
             <ProjectPresentation
               name="Darkthunder UI"
               image="/images/dark-thunder-ui.png"
               technos={["React JS", "Tailwind CSS"]}
-              description="The User Interface of a realtime messaging application designed to be fluent, intuitive and developer friendly."
+              description="L'interface utilisateur d'une application de chat en temps réel designer pour etre fluide, intuitive et accées pour les développeurs"
               sub="Messaging App"
               url="https://github.com/hidden-machina/dark-thunder-ui.git"
             />
@@ -19,7 +19,7 @@ export default function ProjectsSection(){
               name="Darkthunder Realtime"
               image="/images/dark-thunder-ui.png"
               technos={["Node js"]}
-              description="A service that allows data transfert between users to feel realtime."
+              description="Un service qui permet un transfert d'informations entres les utilisateur en utilisant un websocket pour que ce soit en temps réel."
               sub="Socket server"
               url="https://github.com/hidden-machina/dark-thunder-realtime.git"
             />
@@ -27,7 +27,7 @@ export default function ProjectsSection(){
               name="Darkthunder Backend"
               image="/images/dark-thunder-ui.png"
               technos={["PHP Laravel", "MySQL"]}
-              description="the Core of the Darkthunder Application. It's the API that make everything work, from sending messages, creating users, authentification and more."
+              description="L'API qui permet a la solution Darkthunder de marcher."
               sub="API"
               url="https://github.com/hidden-machina/dark-thunder-backend.git"
             />
@@ -35,7 +35,7 @@ export default function ProjectsSection(){
               name="Mindi's APK"
               image="/images/mindi-s-project.png"
               technos={["Expo CLI", "React Native"]}
-              description="A Mobile Application to used to ease viewing and ordering products from Mindi's, a Macramé selling business. The application in contrast of other E-commerce application highlight the importance of colors when ordering products."
+              description="Une application mobile E-commerce pour faciliter la vie aux clients et au vendeur des produits de Mindi's (un business de vente de produit fait en Macramé) en automatisant tout ce qui est commande et publication des produit. La notion de platte de couleur étant importante dans ce business, cela a été mis en valeur dans l'application."
               sub="E-commerce APP"
               url="https://github.com/hidden-machina/mindi-s-apk.git"
             />
@@ -43,7 +43,7 @@ export default function ProjectsSection(){
               name="Mindi's Dashboard"
               image="/images/mindi-s-project.png"
               technos={["Node JS", "Electron JS", "React JS", "Typescript"]}
-              description="A desktop application used a backoffice to manage everything: Products, Orders, facturation, and distribution state."
+              description="Une Application Desktop écrit avec node js (electron js) qui servira de backoffice et d'interface utilisateur pour les comptes Administrateur."
               sub="Dashboard"
               url="https://github.com/hidden-machina/mindi-s-dashboard.git"
             />
@@ -51,7 +51,7 @@ export default function ProjectsSection(){
               name="Mindi's Backend"
               image="/images/mindi-s-project.png"
               technos={["PHP Laravel", "MySQL"]}
-              description="The API that make the whole infrastructure work. Handle the data transfers and persistency of the Backoffice and the users."
+              description="L'API qui fait que toute l'infrastructure reliant Mindi's APK, Mindi's Dashboard et la Base de donnée marche."
               url="https://github.com/hidden-machina/mindi-s-backend.git"
               sub="API"
             />
